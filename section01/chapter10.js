@@ -93,4 +93,21 @@ let array8 = [
 
     //join
     const array12 = ["김동진","님","안녕하세요","반가워요"]; 
-    console.log(array12.join("=="));
+    //console.log(array12.join("=="));
+
+    //for of 반복문(자바의 향상된 for문)
+    let array13 = [1, 2, 3]; 
+    for (let item of array13) { 
+    //console.log(item); 
+    }; 
+
+    // 4 for in 
+    const person = {
+        name:"njh",
+        age: 26,
+        tall: 176
+    };
+    for (let key in person) { 
+    const value = person[key]; 
+    console.log(key, value); 
+    };
