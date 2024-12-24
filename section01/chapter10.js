@@ -36,7 +36,7 @@ const findArray = array3.filter((v)=>{
 });
 //console.log(findArray);
 
-//Map
+//Map(내가 요청하는 정보로 새로 배열에 포함시켜서 리턴한다.)
 const nameArray = array3.map((v)=>{
     return v.age;
 });
