@@ -4,12 +4,14 @@ const Controller = ({onClickButton})=>{
     const onClickValue =(e)=>{
         onClickButton(Number(e.target.value))
     }
+
     return(
         <div>
             <p></p>
             <button onClick={onClickValue} value='7'>7</button>
             <button onClick={onClickValue} value='8'>8</button>
-            <button onClick={onClickValue} value='9'>9</button><br />
+            <button onClick={onClickValue} value='9'>9</button>
+            <button onClick={onClickValue} value='0'>DEL</button><br />
             <button onClick={onClickValue} value='4'>4</button>
             <button onClick={onClickValue} value='5'>5</button>
             <button onClick={onClickValue} value='6'>6</button>

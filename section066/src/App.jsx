@@ -5,9 +5,9 @@ import { useState } from 'react'
 
 function App() {
   const [count,setCount] = useState(0);
-  const [firstNum,setfirstNum] = useState('');
-  const [equal,setEqual] = useState("");
-  const [result,setResult] = useState("");
+
+
+
 
   const onClickButton =(value)=>{
     setCount(count + value*1473)
