@@ -1,0 +1,22 @@
+.Button{
+    background-color: rgb(129, 129, 129);
+    cursor: pointer;
+    border: none;
+    font-size:20px;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.Button_RED{
+    background-color: red;
+    color: black;
+}
+.Button_BLUE{
+    background-color: blue;
+    color: white;
+}
+.Button_GREEN{
+    background-color: rgb(0, 141, 42);
+    color: white;
+}
