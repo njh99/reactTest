@@ -1,5 +1,5 @@
 import './App.css'; 
-import { Routes, Route, useNavigate,useSearchParams } from 'react-router-dom'; 
+import { Routes, Route, useNavigate,useSearchParams,Link } from 'react-router-dom'; 
 import Home from './pages/Home'; 
 import Diary from './pages/Diary'; 
 import New from './pages/New'; 
@@ -52,6 +52,7 @@ const reducer = (state,action)=>{
   } 
 };
 
+
 export const DiaryStateContext = createContext();
 export const DiaryDispatchContext = createContext();
 
@@ -93,10 +94,17 @@ function App() {
       id, 
     }); 
   }; 
- 
+  //쿼리스트링으로 이벤트 페이지 요청
+  const nav = useNavigate();
+  const onClickButton = ()=>{
+    nav("/new?value=GB");
+  };
   return ( 
     <> 
-
+      {/*동적 라우팅 (쿼리스트링)*/}
+      <Link to ="/new?value=hello">New(Query)</Link>
+      <button onClick={onClickButton}>쿼리스트링으로 이벤트로 페이지 요청하기</button>
+      <hr/>
       <DiaryStateContext.Provider value={data}>
         <DiaryDispatchContext.Provider value={{onCreate,onDelete,onUpdate}}>         
           <Routes> 
