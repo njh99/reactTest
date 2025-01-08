@@ -1,0 +1,14 @@
+*{
+    padding: 0px;
+    margin: 0px;
+
+}
+.app{
+    width: 500px;
+    
+    margin: 0 auto;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
